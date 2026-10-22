@@ -6,7 +6,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Install deps
-        run: pip install --quiet pqcrypto qiskit cirq pennylane amazon-braket-sdk
+        run: pip install --quiet pqcrypto qiskit qiskit-qasm3-import cirq pennylane amazon-braket-sdk
       - name: Missao trivalente (local)
         run: python3 ravi_quantuno.py --mission examples/missoes/trivalente_local.json
       - name: Missao poliglota (5 linguagens)

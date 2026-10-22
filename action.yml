@@ -18,7 +18,7 @@ runs:
     - name: 'Ravi Quantuno kernel'
       shell: bash
       run: |
-        pip install --quiet pqcrypto qiskit cirq pennylane amazon-braket-sdk
+        pip install --quiet pqcrypto qiskit qiskit-qasm3-import cirq pennylane amazon-braket-sdk
         python3 "${{ github.action_path }}/ravi_quantuno.py" --mission "${{ inputs.mission }}"
       env:
         ZYQL_TOKEN: ${{ secrets.ZYQL_TOKEN }}
