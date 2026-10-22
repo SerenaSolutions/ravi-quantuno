@@ -1,0 +1,44 @@
+{
+ "missao": "trivalente",
+ "provider": "local",
+ "casos": {
+  "const-1": {
+   "dominante": "00",
+   "esperado": "1",
+   "ok": true
+  },
+  "const-0": {
+   "dominante": "00",
+   "esperado": "0",
+   "ok": true
+  },
+  "balanced": {
+   "dominante": "11",
+   "esperado": "REFUSED",
+   "ok": true
+  }
+ },
+ "veredito": "MISSAO_VERIFICADA_TRIVALENTE_OK",
+ "agente": {
+  "nome": "Ravi Quantum",
+  "versao": "1.0.0",
+  "casa": "SerenaSolutions",
+  "natureza": "agente aut\u00f4nomo de opera\u00e7\u00f5es qu\u00e2nticas (kernel CI, n\u00e3o-chatbot)"
+ },
+ "recibo_id": "55f0ad66d12e2caf56457ce4f2f484a1",
+ "entropia_quantica": {
+  "job_id": "dbcnmds24mrc73ck0p0g",
+  "backend": "ibm_marrakesh",
+  "shots": 256,
+  "qubits": 32,
+  "pool_sha3_256": "9ce9eaabaa1273f2564cd4365455f12d3a995eef3652c081db583fb2b2765fdd",
+  "data": "2026-10-22T02:56:01+00:00"
+ },
+ "assinatura_pq": {
+  "alg": "ML-DSA-44 (FIPS 204, NIST post-quantum signature, Dilithium2 parameters)",
+  "pk_b64": "fJOyoy5Q62nlled6X7c+QZW2B5oVu4W7a+mAZwLjnN/kcYLup5AA3snX57cSWwj7w1oSce3C2S5EF4GduheGgAEiABBt0cYHH38z4hG1IvjnkdmXv3rTEd15nso8v64d0gopeiP9qFw4YI4feOb6I25eaiGr2J6CzHEzKE617MEVvUxZOKKZC6+iE8nrqhVEzIij0Gy8nZMDJxX++TxqiY3Ep0TPPQNNFkSoT51ZxyB8giXja/P6+eEohbhjLmz56C7dyhM6fsrIvnws+O20QJcyUDa9M2gbwjAqvUbgcs/7cIJFp70NyaP+j08QFAj2rZmVKdhTJE3WXs31oOq0my+UaKbGus79B0bjjm4pEAkBo+YoT/J0mcteWTgGFO9rpTRrbdqm96W8mS64F7Ut7Fs8uNPIDw9k98rAUO37q0RxUp7F4iB6AN52+TUcSNXEQbTlLRk530a/vFjtnO+RlIbN8PN6GRn3O6MS3QUCX9jaeg00CGqt7f1BVbga/w63FWtbEnVmA9hzwqtVVaUAeyudA/4to4cx2K34n89t/hhcY9iKwPe8UjvDFu6jMo6XrPgfL/4a1sRtuUrFJ49uKUTZVEw8m25GL0ViJfQe/I2alnpRGrmuP6lDRx0POLKx0G4zBQuyfO74wfRSR61JAh6jVmmR6e4rUh9hehbfjhYE7jhFhWfp9Kx5eD/gyJ4lf5adXrBh2+E9MJO2KJyg7zD6cIeyD7reclO9nQL/xLHl/F69egCIC1waHxIw2FazuJ8kj3zlVWicRuf6hu6qEd9E8tUJnX6LCb50S75Z4FQe6O1WiMDsI7p+QpSqipueJve6qpsxa6Ely/ABXDCFxb1T6ZPmAGtDK8lnLBHeRh+Kua3Yiv502KC1nUDfXg+mENz3uDJAGHHdlFrkVoBnf5oN7KTJPMsU258fu3HkRU3gNJu89KXPxKOpJCgYCqK/cYhhkxPXdWkpvoi5m2QQ3xhNgjbJsrmueyOl+1+IAHrbSMeajjr8cHW0wm2/fKr1kmf0DOe+47MYpp67aJN2/2ioQGVOAhTZIcquEz4EHV2jrLp9UCEwnfBcuzy6sP83FHoLhcZuM0+LhQmWqOiAWrRXmy8mqZjvhWoHgq4A4JM8qLYn2QhxLxaFMuOjIYDMSKbN7xr1Lr6llYFMNGev6ZOYKJlALmUudNzWqnF8XGgCoWBat6zOKYstyIQag9+Df0mXLE16GTz33GMikiPDgLhpTPNYsoH4aeVzXhn4TXqeTRXLqrs1B5+7n4d96gvJP6S/l8EoQNOh95jGCF/l1qcVibB47HlUHK6c/bnbxhFkKAdvUl4R0viWdlFn8W6wvdB/OWSyIg2kHvQL3VWRFx2ipaxzxpT0O1CKPZhNVrIVzV+IANlWjFY7KOyma6IEmbnIXcOTnj1OG0UC7pBk1zeyaSMezvzkjkE/5GUkd24F1QW0mpbC6CQodIZOp5Rq8OopiQTAjoinXv6SYRxywyytm5n3lEXx0sfZ3VdOcCmHkbyidO4iC8RQacyETZVmYV57+clge8KjxTBwBLauCgiEwGMkBWMvwkEklfZnY7GFutGNfyunf0zqEZnl38GE/h7QNr7IUVz61cyzpmGAPnPjPnjiPNelyyFXdAlI/OCcgrqr0ciBhoRzr0xiGgxhDcg9X7E582RcCQYJJ5fgyk27ZE5kjcRWsp0HzzJeyqFCoP8MfwR9u5CjrruJ6ryMafZnf9Dj8wa8Ffjc5/Wtyg==",
+  "sig_b64": "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",
+  "regra": "assinatura ML-DSA-44 sobre json.dumps(recibo, sort_keys=True, ensure_ascii=True, default=str) com assinatura_pq e selo_sha3_256 REMOVIDOS da entrada; pk embarcado no recibo (autoverific\u00e1vel, sem servidor)"
+ },
+ "selo_sha3_256": "3b9ddb89f0f17a3f8d618685019c1fe846d30c9bef32960bd4297822e86fa104"
+}

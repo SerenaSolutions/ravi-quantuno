@@ -1,0 +1,30 @@
+name: ravi-quantum self-test
+on: [push, pull_request]
+jobs:
+  kernel:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install deps
+        run: pip install --quiet pqcrypto qiskit cirq pennylane amazon-braket-sdk
+      - name: Missao trivalente (local)
+        run: python3 ravi_quantum.py --mission examples/missoes/trivalente_local.json
+      - name: Missao poliglota (5 linguagens)
+        run: python3 ravi_quantum.py --mission examples/missoes/poliglota.json
+      - name: Missao braid (local)
+        run: python3 ravi_quantum.py --mission examples/missoes/braid_local.json
+      - name: Missao catalogo (conhecimento)
+        run: python3 ravi_quantum.py --mission examples/missoes/catalogo.json
+      - name: Verificar recibo pós-quântico
+        run: |
+          python3 - <<'EOF'
+          import json, glob, base64, sys
+          sys.path.insert(0, 'ravi')
+          from zqea_pq import verify_signature, canonical
+          n = 0
+          for f in glob.glob('examples/missoes/*.receipt.json'):
+              s, d = verify_signature(json.load(open(f)))
+              assert s in ('PQ_OK', 'LEGACY_V1'), (f, s, d)
+              n += 1
+          print(f"{n} recibos com assinatura ML-DSA-44 válida")
+          EOF

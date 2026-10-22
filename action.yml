@@ -1,0 +1,24 @@
+name: 'Ravi Quantum'
+description: 'Autonomous quantum ops agent: polyglot circuit synthesis (5 languages), trivalent verdicts, PQ-sealed receipts, IBM hardware.'
+author: 'SerenaSolutions'
+branding:
+  icon: 'cpu'
+  color: 'purple'
+inputs:
+  mission:
+    description: 'Mission file (.json/.yaml): trivalente | poliglota | braid | entropia | catalogo'
+    required: true
+  provider:
+    description: 'local | ibm (ibm requires secrets.ZYQL_TOKEN)'
+    required: false
+    default: 'local'
+runs:
+  using: 'composite'
+  steps:
+    - name: 'Ravi Quantum kernel'
+      shell: bash
+      run: |
+        pip install --quiet pqcrypto qiskit cirq pennylane amazon-braket-sdk
+        python3 "${{ github.action_path }}/ravi_quantum.py" --mission "${{ inputs.mission }}"
+      env:
+        ZYQL_TOKEN: ${{ secrets.ZYQL_TOKEN }}

@@ -1,0 +1,46 @@
+{
+ "missao": "catalogo",
+ "veredito": "CATALOGO_EMITIDO",
+ "survey": {
+  "catalogo": "quantum-ecosystem",
+  "versao": "1.0.0",
+  "linguagens_catalogadas": 14,
+  "linguagens_executaveis_no_kernel": [
+   "OpenQASM 3",
+   "Qiskit",
+   "Cirq",
+   "PennyLane",
+   "Braket SDK"
+  ],
+  "provedores_catalogados": 5,
+  "provedor_producao": "IBM Quantum (ibm_marrakesh)",
+  "stack": {
+   "linguagem": "ZEPHIRUM (sintaxe v2 Lisp)",
+   "algoritmo": "ZYQL (decis\u00e3o trivalente 1/0/REFUSED)",
+   "recibos": "Z-QEA v2 (SHA3-256 + ML-DSA-44 FIPS 204 + entropia qu\u00e2ntica atestada)",
+   "ponte_hardware": "Serena Quantum API (token trancado no servidor \u2014 NUNCA no app)"
+  }
+ },
+ "agente": {
+  "nome": "Ravi Quantum",
+  "versao": "1.0.0",
+  "casa": "SerenaSolutions",
+  "natureza": "agente aut\u00f4nomo de opera\u00e7\u00f5es qu\u00e2nticas (kernel CI, n\u00e3o-chatbot)"
+ },
+ "recibo_id": "feddf39a4d108bd9ddd4e88b777d7d15",
+ "entropia_quantica": {
+  "job_id": "dbcnmds24mrc73ck0p0g",
+  "backend": "ibm_marrakesh",
+  "shots": 256,
+  "qubits": 32,
+  "pool_sha3_256": "9ce9eaabaa1273f2564cd4365455f12d3a995eef3652c081db583fb2b2765fdd",
+  "data": "2026-10-22T02:56:01+00:00"
+ },
+ "assinatura_pq": {
+  "alg": "ML-DSA-44 (FIPS 204, NIST post-quantum signature, Dilithium2 parameters)",
+  "pk_b64": "/ZI9NQM/yX6ffx1JgjKAwsWu7bwcdNajbRtgBg25B1A7KUhvPUDyKgXt6VSYyvax0M8S2ZrZ8CtWUN+yNNRmSBUeQ2Olshu9PleI67y3UiWDu41+wQMMhRSWu6ZgtTVW/n1a9gA52DZen9boN6RGbDYb/mfuV0sXGnHaYAZGDmtQtUcWVmHXTU8Q1kW5NyxXzj4w/EjI+zzqP2ROUK6DCWrn8iTja8qTGu2izKw2OkuA1rSdioaNscKlSUxNDPh99pLrDjAmqaxRSPnmicb4HbHAFvTvbzFnoSDajPleFavCgekWJML+h8bkpQbRYkzSoFn6xf70897I9Ts5xs13KZO++ICC7MmxJ/x7ndClWiSuqfJMhzqf7l1nBv+tV4svw2me1iJJXxbYBzr1DeGEithWvcLwLjtqehG7D3xZ6HIh2sS+mFFPPUWFWdsZexIhYYkkxpbyeAfMMEri5eOS4+aMD9CnA0xLjj4n+bgF4+iLvQ3ufp4rMV4TLRvTXw/MvaKW6YhXb/vFVvwKdDtzw6cskfHkG1mqKHeCUXpE1oqRXEEH3qQ0/J3iuYyQPyH/ewdWwa5HWctGSIbU+PWe3e/kjHAYX0UQvPOZxFU7h0EoOdZEByEhTlRcqdueRGKRPXV2WO+A1ps+4qY6/YyR7lffKgwN7bJptZqTESTDCu89mg23OCqh/c8/EL8yyceSLDZhnCvguvCRpPVNg9rb5aXS7TFvUGYd110CLmiHybxzquwyPQdINlwaju2YAhWoK7Cdytd8ZbIvDvw/uWsQX9N5xtF+D4B4AXRzCz2PWl3EIrkoFUcMDNmDbdZA3zj1qgw1ldnZuh+/JkYDZCoFSWhZf78mzJSrHDCR2QBIkChPgJYuXAm9EdZ/BLuo7DEMy6iqutTAPvNUlf10pkTubSk7+RbJySbg5LT1AxjupzUuXNOv04/gmA9L9Mwjtea8kATPOcgXpiSOk48cEdLnXnXlzP3TNrBpMKIJ1NmxRFJEPxTOTqT7EDmkdAJPNs/CqpfRigH7gIzWOx6LnWN57IGZ0Wx/mOAH2zFlrXvVKAYrK5eIA7iiFsVF+mCM9FRbyEpuCL3YJCDcfagm08g4D6y4uoeJslrDH3aG3AuVJ8n2T74Z+Prj3rpIr6S56dFiJdUWKK+463VQOtMhEhNgzf+BLn2qe1iLDdl3o+eY03iuSRWgxS/exmmSAfqCc+VFSnuy4THiRYzDuxkT+1s3H0BSEni19hTWGYxicu2gghBNy+Oo3RdXQFgNjtR+6Yo0CpkZF3+s1von/KOFZNSWy8PfDunvWYN3dULyNCzxyNi55erTaZVFzL9CjeHs1tMGK62KjYFL+nXJnt1/RchpyBQmefxd9QbMoCXQ3OGuSjBxEEWeAuIxPTwq1aDIadpJ20TynHtV1t9WVr5RwLSU6TEf+tIoaL+8U4xCyCK8EkdN996gobRO5ZycYEu8UloAXAvUrpLq9UfhVSWIwZtsK2VZEQkT+tMsuUlh4s0fQwoiLfvIAVqYSZNsBiusvNsaWFb+OTMH6LT9jFtDQIN2PTzy8hDENfNG8EkRHIvwKzqZhrvx42GefMTzG78Ml2c+ZaCSWuSte8KS3KlUdk9rH89gmMnGQsrhq/bkkoCgs2VdeS0lRjtNLFvw+166Ppw34KESQF1edtGXQtPDPtIiqoCWXQaLQFZcmFVbBR+zljLO8oJaFM5v694zdjd03Ld6QmSLH83Dze6Zo4/Z0QZ+Iw==",
+  "sig_b64": "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",
+  "regra": "assinatura ML-DSA-44 sobre json.dumps(recibo, sort_keys=True, ensure_ascii=True, default=str) com assinatura_pq e selo_sha3_256 REMOVIDOS da entrada; pk embarcado no recibo (autoverific\u00e1vel, sem servidor)"
+ },
+ "selo_sha3_256": "7e7e8f5b1d6bb30ee22d600aaabfc9067d1a20fa86c01c86141b6f27782f0eca"
+}
