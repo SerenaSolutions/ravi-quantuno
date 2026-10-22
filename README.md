@@ -1,3 +1,5 @@
+[![self-test](https://github.com/SerenaSolutions/ravi-quantuno/actions/workflows/self-test.yml/badge.svg)](https://github.com/SerenaSolutions/ravi-quantuno/actions/workflows/self-test.yml) [![GitHub Marketplace](https://img.shields.io/badge/Marketplace-Ravi_Quantuno-blue)](https://github.com/marketplace?query=Ravi+Quantuno) [![Pages](https://img.shields.io/badge/Pages-ravi--quantuno-blue)](https://serenasolutions.github.io/ravi-quantuno/)
+
 # ⚛️ Ravi Quantuno — o Agente Triplanar (clássico + quântico + pós-quântico)
 
 **Ravi Quantuno é diferente de todos os agentes que existem no mundo.** Nenhum
