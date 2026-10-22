@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Ravi Quantum v1.0.0 — agente de operações quânticas autônomo (kernel CI).
+"""Ravi Quantuno v1.0.0 — agente de operações quânticas autônomo (kernel CI).
 
 Não é chatbot: é um KERNEL DETERMINÍSTICO que recebe MISSÕES e as executa de
 ponta a ponta — sintetiza circuitos em múltiplas linguagens, executa em
@@ -16,8 +16,8 @@ Missões suportadas:
   entropia     colheita de entropia em hardware real (ibm)
   catalogo     survey do ecossistema (conhecimento versionado)
 
-Uso: python3 ravi_quantum.py --mission <arquivo.json|yaml> [--out receipt.json]
-     python3 ravi_quantum.py --mission-dir examples/missoes/
+Uso: python3 ravi_quantuno.py --mission <arquivo.json|yaml> [--out receipt.json]
+     python3 ravi_quantuno.py --mission-dir examples/missoes/
 Provedor IBM: token vem de ZYQL_TOKEN (env) — NUNCA no código, NUNCA no recibo.
 """
 import sys, os, json, time, argparse
@@ -26,8 +26,8 @@ sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "rav
 from zqea_pq import quantum_receipt_id, entropy_provenance, sign_receipt, sha3_seal
 from knowledge import survey, CATALOG
 
-AGENT = {"nome": "Ravi Quantum", "versao": "1.0.0", "casa": "SerenaSolutions",
-         "natureza": "agente autônomo de operações quânticas (kernel CI, não-chatbot)"}
+AGENT = {"nome": "Ravi Quantuno", "versao": "1.0.0", "casa": "SerenaSolutions",
+         "natureza": "agente triplanar autônomo (clássico + quântico + pós-quântico; kernel CI, não-chatbot)"}
 
 # ---------------- missão: trivalente (DJ n=2) ----------------
 def _dj_cases():
@@ -210,19 +210,22 @@ def executar(mission):
         r = missao_braid(provider)
     elif tipo == "entropia":
         r = missao_entropia()
+    elif tipo == "triplanar":
+        from ravi.cerebro import Cerebro
+        r = Cerebro().missao_triplanar(provider)
     elif tipo == "catalogo":
         r = {"missao": "catalogo", "veredito": "CATALOGO_EMITIDO", "survey": survey()}
     else:
         raise ValueError("missão desconhecida: " + str(tipo))
     r["agente"] = AGENT
-    r["recibo_id"] = quantum_receipt_id("ravi-quantum")
+    r["recibo_id"] = quantum_receipt_id("ravi-quantuno")
     r["entropia_quantica"] = entropy_provenance()
     r = sign_receipt(r)
     r["selo_sha3_256"] = sha3_seal({k: v for k, v in r.items() if k != "selo_sha3_256"})
     return r
 
 def main():
-    ap = argparse.ArgumentParser(description="Ravi Quantum — agente de operações quânticas")
+    ap = argparse.ArgumentParser(description="Ravi Quantuno — agente de operações quânticas")
     ap.add_argument("--mission", required=True, help="arquivo de missão (.json/.yaml)")
     ap.add_argument("--out", help="recibo de saída (default: <mission>.receipt.json)")
     a = ap.parse_args()
@@ -235,7 +238,7 @@ def main():
     rec = executar(mission)
     out = a.out or (a.mission.rsplit(".", 1)[0] + ".receipt.json")
     json.dump(rec, open(out, "w"), ensure_ascii=True, indent=1)
-    print("RAVI QUANTUM v1.0.0 — MISSÃO", rec.get("missao"), "| veredito:", rec["veredito"],
+    print("RAVI QUANTUNO v1.0.0 — MISSÃO", rec.get("missao"), "| veredito:", rec["veredito"],
           "|", round(time.time() - t0, 1), "s")
     print("  recibo selado:", out, "| selo:", rec["selo_sha3_256"][:16], "| PQ: ML-DSA-44")
     for k, v in os.environ.items():

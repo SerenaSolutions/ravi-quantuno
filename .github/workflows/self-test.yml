@@ -1,4 +1,4 @@
-name: ravi-quantum self-test
+name: ravi-quantuno self-test
 on: [push, pull_request]
 jobs:
   kernel:
@@ -8,13 +8,13 @@ jobs:
       - name: Install deps
         run: pip install --quiet pqcrypto qiskit cirq pennylane amazon-braket-sdk
       - name: Missao trivalente (local)
-        run: python3 ravi_quantum.py --mission examples/missoes/trivalente_local.json
+        run: python3 ravi_quantuno.py --mission examples/missoes/trivalente_local.json
       - name: Missao poliglota (5 linguagens)
-        run: python3 ravi_quantum.py --mission examples/missoes/poliglota.json
+        run: python3 ravi_quantuno.py --mission examples/missoes/poliglota.json
       - name: Missao braid (local)
-        run: python3 ravi_quantum.py --mission examples/missoes/braid_local.json
+        run: python3 ravi_quantuno.py --mission examples/missoes/braid_local.json
       - name: Missao catalogo (conhecimento)
-        run: python3 ravi_quantum.py --mission examples/missoes/catalogo.json
+        run: python3 ravi_quantuno.py --mission examples/missoes/catalogo.json
       - name: Verificar recibo pós-quântico
         run: |
           python3 - <<'EOF'
