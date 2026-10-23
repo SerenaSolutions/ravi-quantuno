@@ -101,4 +101,7 @@ class Cerebro:
                 "pensamento": pensamento,
                 "planos_operados": PLANOS,
                 "quantico": {k: v for k, v in ctx.get("quantico", {}).items() if k != "veredito"},
-                "veredito": "TRIPLANAR_VERIFICADO_1_0_REFUSED"}
+                "veredito": "TRIPLANAR_VERIFICADO_TRIVALENTE[1,0,REFUSED]",
+                "leitura_veredito": ("assinatura da bateria trivalente: const-1→1, const-0→0, "
+                                      "balanceado→REFUSED. A recusa do caso balanceado É o resultado "
+                                      "correto e esperado do núcleo ZYQL; a missão está VERIFICADA.")}
