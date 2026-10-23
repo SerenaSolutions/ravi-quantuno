@@ -16,7 +16,7 @@ Cada resultado vem selado em recibo Z-QEA v2: SHA3-256 + assinatura
 verificável offline, sem servidor: prova criptográfica pós-quântica de que o
 seu código rodou em QPU real.
 
-Tudo é open source e usa o plano **gratuito** da IBM (10 min de QPU/28 dias em 3 QPUs de 156 qubits) — qualquer pesquisador ou estudante reproduz:
+Tudo é open source e cada experimento é reproduzível (job ID público + recibo selado):
 
 🔬 ZQ-GATE — porta lógica trivalente no silício
 ⚛️ Z-Anyon Lab — trançados de ânions S3
@@ -24,9 +24,6 @@ Tudo é open source e usa o plano **gratuito** da IBM (10 min de QPU/28 dias em 
 🔐 Z-QEA Sealer / Verifier — recibos pós-quânticos
 🤖 Ravi Quantuno — o agente triplanar (clássico + quântico + pós-quântico) com autonomia auditável: o plano e os vereditos de cada passo vão selados no recibo
 
-Guia de teste grátis: github.com/SerenaSolutions/ravi-quantuno/blob/main/docs/teste-gratis-ibm.md
-Varredura mundial de laboratórios com hardware real: docs/laboratorios-quanticos.md
-
 *Reprodutibilidade como método: cada afirmação amarrada a job ID + recibo selado.*
 
-#QuantumComputing #IBMQ Quantum #OpenSource #PostQuantum #MLDSA
+#QuantumComputing #QuantumComputing #OpenSource #PostQuantum #MLDSA

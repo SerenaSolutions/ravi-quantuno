@@ -96,5 +96,5 @@ measure q[1] -> c[1];
 | balanced | 00 ≈ 0%, 01/10/11 ≈ 33% cada | ≠00 dominante | REFUSED |
 
 Bateria validada antes em hardware real IBM (job dbcnp4s24mrc73ck0v80,
-ibm_marrakesh, 512 shots) — ver quantum-poc. A mesma lógica agora roda grátis
+ibm_marrakesh, 512 shots) — ver quantum-poc. A mesma lógica agora roda
 na QuTech, multiplicando os laboratórios do ZEPHIRUM.
